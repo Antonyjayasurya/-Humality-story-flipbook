@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Humality story book | First project</title>
+  <link rel="stylesheet"type="text/css"href="style.css">
+</head>
+<body>
+	<script src="index.js"></script>
+	<header>
+		<a href="index.flipbook.html"class="story">story</a>
+		<ul>
+		  <li><a href="#"class="active">Home</a></li>
+		  <li><a href="#About me">About me</a></li>
+		  <li><a href="index.flipbook.html">Story Book</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+	<section>
+	  <img src="stars.png" id="stars">
+	  <img src="moon.png" id="moon">
+	  <img src="mountains_behind.png" id="mountains_behind">
+	  <h2 id="text"><span>Flipbook Story of</span><br><br>Humality</h2>
+	  <a href="#sec"id="btn">Explore</a>
+	  <img src="mountains_front1.png" id="mountains_front1">
+	</section>
+	<div class="sec"id="sec">
+		<h2>Welcome to Humality ( 'Alone Amoung the Crowd') story book</h2>
+		<p>Hi I'm Antony jaya surya , 
+			this is first project as a front end developer 
+		   hope you like my page and support me....
+	       read my Humality story book by plessing
+	        STORY or STORY BOOK in the menu page above.
+               Thank you for visiting my page...</p>
+		<br> <p>
+			<img src="1.jpg" width="100" height="200">
+			I WAS UNCONSCIOUS IN A DARK FOREST<br><br>
+
+          A day morning, it's a sunny theme ,in the middle of the
+          forest, a tree was smashed, one tiny little sparrow, flying
+          over the tree and to the ground, there the bike parts was
+          broken down over the ground..(in a smooth action).<br>
+
+                      <br> FIRST PAGE OF HUMALITY <br>
+
+          <br> I OPENED MY EYES SLOWLY,THE VISION WAS BLUR<br>
+
+          <br >i slowly opened my eye (slowly),my eye vision was blur,i
+          started to refresh my mind, i sawed my surrounding was
+          covered with trees, i understood that i was in a forest, i
+          suddenly got a pain on my head and when i touch my head,<br><br> my
+          hair and beard grown long,i understood that i was here for
+          long time, i don't know what happened to my head. and it
+          surprised me when i tried to imagine my face....<br><br>i forgot my
+          face how my face look like, i forgot my name, i forgot
+          entire past, i don't even recognize my parents. the only
+          thing i could recognize was my finger point at a two persons
+          and a lady sound which she was shouting help him" help him!.<br><br>
+          and i was laying on the ground.<br> that was the last scene i
+          could remember. that image was running on my mind . that
+          last movement was not so clear and also something missing in
+          it. it was impossible for me to remember the missing one in
+          it. <br><br>the real thing which unfocused my brain was why i
+          couldn't recognize my face but instead of those two people.
+          so that give me a clear description for me ,that the two
+          person took major please in my past.my next doubt was. how
+          did i live this many days without food.but i don't have any
+          answer for it.<br><br> CLICK STORY BOOK in the menu to Read BOOK...</p><br><br><br>
+		                <div class="content">
+		                 <h2>About me</h2>
+						 <p>As a web developer, I have learned about HTML ,CSS & JavaScript,<br>
+							 Great learming.com Helped me to learn a lot in frontend developer...</p>
+						</div>
+
+		  <section id="About me" class="section">
+			<section id="contact"class="section"></section>
+		</section>
+		  <img src="about.jpg" class="type1 type2">
+		  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+			<footer>
+				<h2>Contact</h2>
+				<div class="rounded-social-buttons">
+					<a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					<a class="social-button twitter" href="https://wa.me/8431917892?text=/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+					<a class="social-button linkedin" href="https://www.linkedin.com/in/surya-joseph-8ba05b255/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					<a class="social-button youtube" href="https://www.youtube.com/channel/UCLqT0vJqDkkfvZlI--f4mVQ/" target="_blank"><i class="fab fa-youtube"></i></a>
+					<a class="social-button instagram" href="https://www.instagram.com/surya_joseph_s/" target="_blank"><i class="fab fa-instagram"></i></a>
+			</footer></div>
+		<script>
+			let stars = document.getElementById('stars');
+			let moon = document.getElementById('moon');
+			let mountains_behind = document.getElementById('mountains_behind');
+			let text = document.getElementById('text');
+			let btn = document.getElementById('btn');
+			let mountains_front1 = document.getElementById('mountains_front1');
+			let header = document.querySelector('header')
+
+			window.addEventListener('scroll',function(){
+				let value = window.scrollY;
+				stars.style.left = value *0.25 + 'px';
+				moon.style.top = value *1.00 + 'px';
+				mountains_behind.style.top = value *0.5 + 'px'; 
+				mountains_front1.style.top = value *0 + 'px';
+				text.style.marginRight = value *4 + 'px';
+				btn.style.marginTop = value *1.5 + 'px';
+				header.style.top = value *0.5 + 'px';
+			})
+		</script>
+      </body>
+</html>
